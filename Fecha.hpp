@@ -25,6 +25,7 @@ public:
 	string toString() const;
 
 	bool esValida() const;
+	bool esBisiesto() const;
 
 	bool operator==(const Fecha& otra) const;
 	bool operator<(const Fecha& otra) const;
