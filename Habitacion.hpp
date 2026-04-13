@@ -14,6 +14,16 @@ public:
 	Habitacion();
 	Habitacion(int numero, TipoHabitacion tipo, double precioPorNoche);
 	~Habitacion();
+
+	int getNumero() const;
+	TipoHabitacion getTipo() const;
+	double getPrecioPorNoche() const;
+
+	void setNumero(int numero);
+	void setTipo(TipoHabitacion tipo);
+	void setPrecioPorNoche(double precioPorNoche);
+
+	void mostrarInfoHabitacion() const;
 };
 
 #endif
