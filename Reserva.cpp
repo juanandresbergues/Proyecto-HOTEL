@@ -33,5 +33,19 @@ void Reserva::calcularPrecioTotal() {
 		precioTotal = 0.0;
 	}
 }
+void Reserva::mostrarInfoReserva() const
+{
+	cout << "ID Reserva:" << idReserva << endl;
+	cout << "fecha inicio:";
+	fechaInicio.mostrar();
+	cout << "numero noches:" << numeroNoches << endl;
+	if (cliente != nullptr) {
+		cliente->mostrarInfoCliente();
+	}
+	if (habitacion != nullptr) {
+		habitacion->mostrarInfoHabitacion();
+
+	}
+	cout << "precio total:" << precioTotal << endl;
 
 }
