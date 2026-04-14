@@ -13,7 +13,7 @@ Reserva::Reserva() {
 	precioTotal = 0.0;
 }
 
-Reserva::Reserva(fecha fechaEntrada, int numeroNoches, Cliente* cliente, Habitacion* habitacion) {
+Reserva::Reserva(fecha fechaInicio, int numeroNoches, Cliente* cliente, Habitacion* habitacion) {
 	idReserva = siguienteID++;
 
 	this->fechaInicio = fechaInicio;
@@ -24,4 +24,14 @@ Reserva::Reserva(fecha fechaEntrada, int numeroNoches, Cliente* cliente, Habitac
 }
 
 Reserva::~Reserva() {
+}
+void Reserva::calcularPrecioTotal() {
+	if (habitacion != nullptr) {
+		precioTotal = numeroNoches * habitacion->getPrecio();
+	}
+	else {
+		precioTotal = 0.0;
+	}
+}
+
 }
