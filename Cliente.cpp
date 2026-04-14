@@ -19,3 +19,12 @@ Cliente::Cliente(string dni, string nombre, string apellido, string email, strin
 
 Cliente::~Cliente() {
 }
+
+void Cliente::mostrarInfoCliente() const
+{
+	cout << "DNI:" << dni << endl;
+	cout << "Nombre:" << nombre << endl;
+	cout << "Apellido:" << apellido << endl;
+	cout << "Email:" << email << endl;
+	cout << "Telefono:" << telefono << endl;
+}

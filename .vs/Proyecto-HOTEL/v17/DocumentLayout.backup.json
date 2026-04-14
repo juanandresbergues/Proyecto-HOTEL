@@ -1,54 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\",
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Habitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Habitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hotel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\Source\\Repos\\Proyecto-HOTEL\\Fecha.hpp||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fecha.hpp||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\Source\\Repos\\Proyecto-HOTEL\\main.cpp||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\main.cpp||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Fecha.hpp||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fecha.hpp||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hotel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Fecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Habitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Habitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TipoHabitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hotel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Habitacion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Habitacion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Habitacion.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Fecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fecha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,8 +58,168 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cliente.cpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp",
+              "RelativeDocumentMoniker": "Cliente.cpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp",
+              "RelativeToolTip": "Cliente.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-13T10:13:16.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Hotel.cpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp",
+              "RelativeDocumentMoniker": "Hotel.cpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp",
+              "RelativeToolTip": "Hotel.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-12T20:18:34.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reserva.hpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp",
+              "RelativeDocumentMoniker": "Reserva.hpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp",
+              "RelativeToolTip": "Reserva.hpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-12T20:18:15.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-12T19:48:29.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TipoHabitacion.hpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp",
+              "RelativeDocumentMoniker": "TipoHabitacion.hpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp",
+              "RelativeToolTip": "TipoHabitacion.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-12T20:17:35.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Fecha.hpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Fecha.hpp",
+              "RelativeDocumentMoniker": "Fecha.hpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Fecha.hpp",
+              "RelativeToolTip": "Fecha.hpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-12T20:16:59.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cliente.hpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp",
+              "RelativeDocumentMoniker": "Cliente.hpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp",
+              "RelativeToolTip": "Cliente.hpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-12T20:17:47.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Habitacion.hpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Habitacion.hpp",
+              "RelativeDocumentMoniker": "Habitacion.hpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Habitacion.hpp",
+              "RelativeToolTip": "Habitacion.hpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-12T20:18:03.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Habitacion.cpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Habitacion.cpp",
+              "RelativeDocumentMoniker": "Habitacion.cpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Habitacion.cpp",
+              "RelativeToolTip": "Habitacion.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-12T20:18:10.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Reserva.cpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp",
+              "RelativeDocumentMoniker": "Reserva.cpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp",
+              "RelativeToolTip": "Reserva.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-12T20:18:21.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hotel.hpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp",
+              "RelativeDocumentMoniker": "Hotel.hpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp",
+              "RelativeToolTip": "Hotel.hpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-12T20:18:29.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fecha.cpp",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Fecha.cpp",
+              "RelativeDocumentMoniker": "Fecha.cpp",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Fecha.cpp",
+              "RelativeToolTip": "Fecha.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-12T20:17:18.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -75,153 +235,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Hotel.cpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp",
-              "RelativeDocumentMoniker": "Hotel.cpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp",
-              "RelativeToolTip": "Hotel.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-12T20:18:34.782Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Hotel.hpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp",
-              "RelativeDocumentMoniker": "Hotel.hpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp",
-              "RelativeToolTip": "Hotel.hpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-12T20:18:29.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Reserva.cpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp",
-              "RelativeDocumentMoniker": "Reserva.cpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp",
-              "RelativeToolTip": "Reserva.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-12T20:18:21.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Reserva.hpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp",
-              "RelativeDocumentMoniker": "Reserva.hpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp",
-              "RelativeToolTip": "Reserva.hpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-12T20:18:15.47Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-12T19:48:29.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TipoHabitacion.hpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp",
-              "RelativeDocumentMoniker": "TipoHabitacion.hpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp",
-              "RelativeToolTip": "TipoHabitacion.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-12T20:17:35.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Fecha.hpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Fecha.hpp",
-              "RelativeDocumentMoniker": "Fecha.hpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Fecha.hpp",
-              "RelativeToolTip": "Fecha.hpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-12T20:16:59.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cliente.hpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp",
-              "RelativeDocumentMoniker": "Cliente.hpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp",
-              "RelativeToolTip": "Cliente.hpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-12T20:17:47.635Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Habitacion.hpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Habitacion.hpp",
-              "RelativeDocumentMoniker": "Habitacion.hpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Habitacion.hpp",
-              "RelativeToolTip": "Habitacion.hpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-12T20:18:03.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Cliente.cpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp",
-              "RelativeDocumentMoniker": "Cliente.cpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp*",
-              "RelativeToolTip": "Cliente.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-12T20:17:52.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Habitacion.cpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Habitacion.cpp",
-              "RelativeDocumentMoniker": "Habitacion.cpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Habitacion.cpp",
-              "RelativeToolTip": "Habitacion.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-12T20:18:10.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Fecha.cpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Fecha.cpp",
-              "RelativeDocumentMoniker": "Fecha.cpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Fecha.cpp",
-              "RelativeToolTip": "Fecha.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-12T20:17:18.949Z"
             }
           ]
         }
