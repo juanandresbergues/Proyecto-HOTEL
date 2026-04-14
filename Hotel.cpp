@@ -99,7 +99,7 @@ void Hotel::cancelarReserva(int idReserva) {
 	}
 }
 
-void Hotel::guardarClientesEnArchivo(string nombreArchivo) const {
+void Hotel::guardarClientesEnArchivo(string& nombreArchivo) const {
 	ofstream archivo(nombreArchivo);
 	if (archivo.is_open()) {
 		for (int i = 0; i < clientes.size(); i++) {
@@ -117,7 +117,7 @@ void Hotel::guardarClientesEnArchivo(string nombreArchivo) const {
 	}
 }
 
-void Hotel::guardarHabitacionesEnArchivo(string nombreArchivo) const {
+void Hotel::guardarHabitacionesEnArchivo(string& nombreArchivo) const {
 	ofstream archivo(nombreArchivo);
 	if (archivo.is_open()) {
 		for (int i = 0; i < habitaciones.size(); i++) {
@@ -133,7 +133,7 @@ void Hotel::guardarHabitacionesEnArchivo(string nombreArchivo) const {
 	}
 }
 
-void Hotel::guardarReservasEnArchivo(string nombreArchivo) const {
+void Hotel::guardarReservasEnArchivo(string& nombreArchivo) const {
 	ofstream archivo(nombreArchivo);
 	if (archivo.is_open()) {
 		for (int i = 0; i < reservas.size(); i++) {

@@ -31,9 +31,9 @@ public:
 
 	void cancelarReserva(int IDreserva);
 
-	void guardarClientesEnArchivo(string nombreArchivo) const;
-	void guardarHabitacionesEnArchivo(string nombreArchivo) const;
-	void guardarReservasEnArchivo(string nombreArchivo) const;
+	void guardarClientesEnArchivo(string& nombreArchivo) const;
+	void guardarHabitacionesEnArchivo(string& nombreArchivo) const;
+	void guardarReservasEnArchivo(string& nombreArchivo) const;
 
 	void cargarClientesDesdeArchivo(string nombreArchivo);
 	void cargarHabitacionesDesdeArchivo(string nombreArchivo);
