@@ -58,13 +58,13 @@ int menu carga() {
 	do {
 		switch (opcion) {
 		case 1:
-			guardarClientesEnArchivo(string nombreArchivo);
+			guardarClientesEnArchivo(string& nombreArchivo);
 			break;
 		case 2:
-			guardarHabitacionesEnArchivo(string nombreArchivo);
+			guardarHabitacionesEnArchivo(string& nombreArchivo);
 			break;
 		case 3:
-			guardarReservasEnArchivo(string nombreArchivo);
+			guardarReservasEnArchivo(string& nombreArchivo);
 			break;
 		default:
 			cout << "opcion invalida" << endl;
