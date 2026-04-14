@@ -1,4 +1,4 @@
-#inndef RESERVA_HPP
+#ifndef RESERVA_HPP
 #define RESERVA_HPP
 
 #include "Fecha.hpp"

@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hotel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,9 +44,9 @@
               "RelativeDocumentMoniker": "Hotel.cpp",
               "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp",
               "RelativeToolTip": "Hotel.cpp",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAAANcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-14T08:15:25.344Z",
+              "WhenOpened": "2026-04-14T08:42:35.593Z",
               "EditorCaption": ""
             },
             {
@@ -61,22 +57,9 @@
               "RelativeDocumentMoniker": "Hotel.hpp",
               "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp",
               "RelativeToolTip": "Hotel.hpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-14T08:15:18.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\jaabz\\source\\repos\\Proyecto-HOTEL\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-14T08:00:15.601Z",
+              "WhenOpened": "2026-04-14T08:40:13.088Z",
               "EditorCaption": ""
             }
           ]

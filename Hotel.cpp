@@ -256,3 +256,4 @@ void Hotel::cargarReservasDesdeArchivo(string nombreArchivo) {
 	else {
 		cout << "No se pudo abrir el archivo " << nombreArchivo << " para cargar las reservas." << endl;
 	}
+}
