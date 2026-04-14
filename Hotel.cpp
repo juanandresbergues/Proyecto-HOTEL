@@ -37,7 +37,7 @@ void Hotel::agregarReserva(Reserva* reserva) {
 	reservas.push_back(reserva);
 }
 
-Cliente* Hotel::buscarClientePorDni(string dni) {
+Cliente* Hotel::buscarClientePorDNI(string dni) const {
 	for (int i = 0; i < clientes.size(); i++) {
 		if (clientes[i]->getDni() == dni) {
 			return clientes[i];
@@ -46,7 +46,7 @@ Cliente* Hotel::buscarClientePorDni(string dni) {
 	return nullptr;
 }
 
-Habitacion* Hotel::buscarHabitacionPorNumero(int numero) {
+Habitacion* Hotel::buscarHabitacionPorNumero(int numero) const {
 	for (int i = 0; i < habitaciones.size(); i++) {
 		if (habitaciones[i]->getNumero() == numero) {
 			return habitaciones[i];
@@ -55,7 +55,7 @@ Habitacion* Hotel::buscarHabitacionPorNumero(int numero) {
 	return nullptr;
 }
 
-Reserva* Hotel::buscarReservaPorId(int idReserva) {
+Reserva* Hotel::buscarReservaPorID(int idReserva) const {
 	for (int i = 0; i < reservas.size(); i++) {
 		if (reservas[i]->getIdReserva() == idReserva) {
 			return reservas[i];

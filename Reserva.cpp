@@ -5,7 +5,7 @@ using namespace std;
 int Reserva::siguienteID = 1;
 
 Reserva::Reserva() {
-	idReserva = siguienteID++;
+	IDreserva = siguienteID++;
 
 	fechaInicio = fecha();
 	numeroNoches = 0;
@@ -14,7 +14,7 @@ Reserva::Reserva() {
 	precioTotal = 0.0;
 }
 
-Reserva::Reserva(fecha fechaEntrada, int numeroNoches, Cliente* cliente, Habitacion* habitacion) {
+Reserva::Reserva(Fecha fechaInicio, int numeroNoches, Cliente* cliente, Habitacion* habitacion) {
 	idReserva = siguienteID++;
 
 	this->fechaInicio = fechaInicio;
@@ -27,7 +27,7 @@ Reserva::Reserva(fecha fechaEntrada, int numeroNoches, Cliente* cliente, Habitac
 Reserva::~Reserva() {
 }
 
-int Reserva::getIdReserva() const {
+int Reserva::getIDreserva() const {
 	return idReserva;
 }
 
@@ -51,7 +51,7 @@ double Reserva::getPrecioTotal() const {
 	return precioTotal;
 }
 
-void Reserva::setFechaInicio(fecha fechaInicio) {
+void Reserva::setFechaInicio(Fecha fechaInicio) {
 	this->fechaInicio = fechaInicio;
 }
 
@@ -65,6 +65,10 @@ void Reserva::setCliente(Cliente* cliente) {
 
 void Reserva::setHabitacion(Habitacion* habitacion) {
 	this->habitacion = habitacion;
+}
+
+void Reserva::setPrecioTotal(double precioTotal) {
+	this->precioTotal = precioTotal;
 }
 
 void Reserva::calcularPrecioTotal() {
