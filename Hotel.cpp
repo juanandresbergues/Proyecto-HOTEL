@@ -37,3 +37,14 @@ void Hotel::buscarClientePorDNI(string dni) const
 	}
 	return nullptr;
 }
+void Hotel::buscarHabitacionPorNumero(int numero) const
+{
+	for (int i = 0; i < habitaciones.size(); i++)
+	{
+		if (habitaciones[i]->getNumero == numero) {
+			return habitaciones[i];
+		}
+
+	}
+	return nullptr;
+}
