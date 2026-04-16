@@ -26,3 +26,14 @@ void Hotel::agregarCliente(Cliente* cliente) {
 void Hotel::agregarHabitacion(Habitacion* habitacion) {
 	habitaciones.push_back(habitacion);
 }
+void Hotel::buscarClientePorDNI(string dni) const
+{
+	for (int i = 0; i < clientes.size(); i++)
+	{
+		if (clientes[i]->getDni == dni) {
+			return clientes[i];
+		}
+
+	}
+	return nullptr;
+}
