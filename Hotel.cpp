@@ -48,3 +48,12 @@ void Hotel::buscarHabitacionPorNumero(int numero) const
 	}
 	return nullptr;
 }
+void Hotel::mostrarClientes() const //recorre y llama al vector para mostrar 
+{
+	for (int i = 0; i < clientes.size(); i++)
+	{
+		clientes[i]->mostrarInfoCliente();
+		cout << "__________________" << endl;
+
+	}
+}
