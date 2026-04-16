@@ -20,6 +20,9 @@ Hotel::~Hotel() {
 		reservas[i] = nullptr;
 	}
 }
-void Hotel::agregarCliente(Cliente* Cliente) {
+void Hotel::agregarCliente(Cliente* cliente) {
 	clientes.push_back(cliente); //como cliente es un vector el push back annade al cliente al final del vector 
+}
+void Hotel::agregarHabitacion(Habitacion* habitacion) {
+	habitaciones.push_back(habitacion);
 }
