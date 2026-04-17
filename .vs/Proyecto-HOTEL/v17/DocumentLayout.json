@@ -11,12 +11,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Hotel.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TipoHabitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{109BCC35-730E-0A1F-2D0C-0A84FAA31F0E}|..\\..\\..\\AppData\\Roaming\\Microsoft\\VisualStudio\\17.0_4e1b3c4d\\SingleFileISense\\_sfi_5817b2f7-d97c-4b73-8d4c-3991e3d89f73_.vcxproj|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,8 +27,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fecha.hpp||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TipoHabitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reserva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Reserva.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Habitacion.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -62,7 +62,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Cliente.cpp",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.cpp",
               "RelativeDocumentMoniker": "Cliente.cpp",
@@ -81,14 +81,14 @@
               "RelativeDocumentMoniker": "Hotel.cpp",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.cpp",
               "RelativeToolTip": "Hotel.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAUwGsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-12T20:18:34.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Reserva.hpp",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.hpp",
               "RelativeDocumentMoniker": "Reserva.hpp",
@@ -114,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "TipoHabitacion.hpp",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\TipoHabitacion.hpp",
               "RelativeDocumentMoniker": "TipoHabitacion.hpp",
@@ -127,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Fecha.hpp",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Fecha.hpp",
               "RelativeDocumentMoniker": "Fecha.hpp",
@@ -140,13 +140,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Cliente.hpp",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp",
               "RelativeDocumentMoniker": "Cliente.hpp",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Cliente.hpp",
               "RelativeToolTip": "Cliente.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-12T20:17:47.635Z",
               "EditorCaption": ""
@@ -178,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Reserva.cpp",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Reserva.cpp",
               "RelativeDocumentMoniker": "Reserva.cpp",
@@ -197,7 +197,7 @@
               "RelativeDocumentMoniker": "Hotel.hpp",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\Proyecto-HOTEL\\Hotel.hpp",
               "RelativeToolTip": "Hotel.hpp",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-12T20:18:29.313Z",
               "EditorCaption": ""

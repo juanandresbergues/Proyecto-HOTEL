@@ -1,4 +1,5 @@
 #include "Hotel.hpp"
+#include <fstream>
 using namespace std;
 
 Hotel::Hotel() {
@@ -41,7 +42,8 @@ void Hotel::buscarClientePorDNI(string dni) const
 	}
 	return nullptr;
 }
-void Hotel::buscarReservaPorID(int IDreserva) {
+void Hotel::buscarReservaPorID(int IDreserva)const
+{
 	for (int i = 0; i < reservas.size(); i++)
 	{
 		if (reservas[i]->getIDreserva == IDreserva) {
@@ -98,4 +100,25 @@ void Hotel::cancelarReserva(int IDreserva) {
 			return;
 		}
 	}
+}
+void Hotel::guardarClientesEnArchivo(string nombreArchivo) const
+{
+	ofstream fichero(nombreArchivo);
+
+	if (!fichero) {
+		cout << "Error al abrir el archivo" << endl;
+		return;
+	}else{
+		for (int i = 0; i < clientes.size(); i++) {
+			fichero << clientes[i]->getDni() << ";"
+				<< clientes[i]->getNombre() << ";"
+				<< clientes[i]->getApellido() << ";"
+				<< clientes[i]->getEmail() << ";"
+				<< clientes[i]->getTelefono() << endl;
+		}
+	}
+
+	fichero.close();
+}
+
 }
