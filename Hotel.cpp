@@ -57,3 +57,12 @@ void Hotel::mostrarClientes() const //recorre y llama al vector para mostrar
 
 	}
 }
+void Hotel::mostrarHabitaciones() const //el puntero apunta a la hab y ejecuta funcion
+{
+	for (int i = 0; i < habitaciones.size(); i++)
+	{
+		habitaciones[i]->mostrarInfoHabitacion();
+		cout << "_______________________" << endl;
+	}
+	
+}
