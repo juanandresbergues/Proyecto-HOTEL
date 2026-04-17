@@ -66,3 +66,11 @@ void Hotel::mostrarHabitaciones() const //el puntero apunta a la hab y ejecuta f
 	}
 	
 }
+void Hotel::mostrarReservas() const
+{
+	for (int i = 0; i < reservas.size(); i++)
+	{
+		reservas[i]->mostrarInfoReserva();
+		cout << "______________" << endl;
+	}
+}
