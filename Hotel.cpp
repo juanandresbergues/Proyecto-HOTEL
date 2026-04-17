@@ -74,3 +74,15 @@ void Hotel::mostrarReservas() const
 		cout << "______________" << endl;
 	}
 }
+void Hotel::cancelarReserva(int IDreserva) {
+	for (int i = 0; i < reservas.size(); i++) {
+		if (reservas[i]->getIDreserva() == IDreserva) {
+
+			delete reservas[i];
+			reservas.erase(reservas.begin() + i);
+
+			cout << "Reserva cancelada correctamente" << endl;
+			return;
+		}
+	}
+}
