@@ -137,4 +137,28 @@ void Hotel::guardarHabitacionesEnArchivo(string nombreArchivo) const
 
 	fichero.close();
 }
+void Hotel::guardarReservasEnArchivo(string nombreArchivo) const
+{
+	ofstream fichero(nombreArchivo);
+
+	if (!fichero) {
+		cout << "Error al abrir el archivo" << endl;
+		return;
+	}
+
+	for (int i = 0; i < reservas.size(); i++) {
+
+		fichero << reservas[i]->getIDreserva() << ";"
+			<< reservas[i]->getFechaInicio().getDia() << "-"
+			<< reservas[i]->getFechaInicio().getMes() << "-"
+			<< reservas[i]->getFechaInicio().getAnio() << ";"
+			<< reservas[i]->getNumeroNoches() << ";"
+			<< reservas[i]->getCliente()->getDni() << ";"
+			<< reservas[i]->getHabitacion()->getNumero() << ";"
+			<< reservas[i]->getPrecioTotal()
+			<< endl;
+	}
+
+	fichero.close();
+}
 
