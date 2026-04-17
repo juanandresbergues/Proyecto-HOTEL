@@ -162,3 +162,148 @@ void Hotel::guardarReservasEnArchivo(string nombreArchivo) const
 	fichero.close();
 }
 
+void Hotel::cargarClientesDesdeArchivo(string nombreArchivo) const
+{
+		ifstream archivo(nombreArchivo);
+
+		if (!archivo.is_open()) {
+			cout << "Error al abrir el archivo de clientes\n";
+			return;
+		}
+
+		clientes.clear();
+
+		string linea;
+
+		while (getline(archivo, linea)) {
+			stringstream ss(linea);
+
+			Cliente c; 
+
+			getline(ss, c.dni, ', ');
+			getline(ss, c.nombre, ', ');
+			getline(ss, c.apellido, ', ');
+			getline(ss, c.email, ', ');
+			getline(ss, c.telefono, ', ');
+
+			if (c.dni != "") {
+				clientes.push_back(c);
+			}
+		}
+
+		archivo.close();
+	
+}
+
+void Hotel::cargarHabitacionesDesdeArchivo(string nombreArchivo) const {
+	ifstream archivo(nombreArchivo);
+
+	if (!archivo.is_open()) {
+		cout << "Error al abrir el archivo de habitaciones\n";
+		return;
+	}
+
+	habitaciones.clear();
+
+	string linea;
+
+	while (getline(archivo, linea)) {
+		stringstream ss(linea);
+
+		Habitacion h;
+
+		string token;
+
+		
+		getline(ss, token, ',');
+		h.numero = stoi(token);
+
+		
+		getline(ss, token, ',');
+		if (token == "INDIVIDUAL") {
+			h.tipo = TipoHabitacion::INDIVIDUAL;
+		}
+		else if (token == "DOBLE") {
+			h.tipo = TipoHabitacion::DOBLE;
+		}
+		else if (token == "SUITE") {
+			h.tipo = TipoHabitacion::SUITE;
+		}
+		else {
+			h.tipo = TipoHabitacion::INDIVIDUAL; //x si es q no registra o esta null divagate
+		}
+
+		
+		getline(ss, token, ',');
+		h.precioPorNoche = stod(token);
+
+		if (h.numero > 0) {
+			habitaciones.push_back(h);
+		}
+	}
+
+	archivo.close();
+
+}
+
+void Hotel::cargarReservasDesdeArchivo(string nombreArchivo) const {
+	ifstream archivo(nombreArchivo);
+
+	if (!archivo.is_open()) {
+		cout << "Error al abrir el archivo de reservas\n";
+		return;
+	}
+
+	reservas.clear();
+
+	string linea;
+
+	while (getline(archivo, linea)) {
+		stringstream ss(linea);
+
+		Reserva r;
+
+		string token;
+		string dniCliente;
+		int numeroHabitacion;
+
+		getline(ss, token, ', ');
+		r.idReserva = stoi(token);
+
+		getline(ss, dniCliente, ', ');
+
+		getline(ss, token, ', ');
+		numeroHabitacion = stoi(token);
+
+		getline(ss, r.fechaInicio, ', ');
+
+		getline(ss, token, ', ');
+		r.numeroNoches = stoi(token);
+
+		getline(ss, token, ',');
+		r.precioTotal = stod(token);
+
+		r.cliente = nullptr;
+		for (auto& c : clientes) {
+			if (c.dni == dniCliente) {
+				r.cliente = &c;
+				break;
+			}
+		}
+
+		r.habitacion = nullptr;
+		for (auto& h : habitaciones) {
+			if (h.numero == numeroHabitacion) {
+				r.habitacion = &h;
+				break;
+			}
+		}
+
+		if (r.cliente != nullptr && r.habitacion != nullptr) {
+			reservas.push_back(r);
+		}
+	}
+
+	archivo.close();
+}
+
