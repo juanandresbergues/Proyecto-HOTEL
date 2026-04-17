@@ -24,236 +24,289 @@ Hotel::~Hotel() {
 		reservas[i] = nullptr;
 	}
 }
-
 void Hotel::agregarCliente(Cliente* cliente) {
-	clientes.push_back(cliente);
+	clientes.push_back(cliente); //como cliente es un vector el push back annade al cliente al final del vector 
 }
-
 void Hotel::agregarHabitacion(Habitacion* habitacion) {
 	habitaciones.push_back(habitacion);
 }
-
-void Hotel::agregarReserva(Reserva* reserva) {
+void Hotel::agregarReserva(Reserva* reserva)  
+{
 	reservas.push_back(reserva);
 }
-
-Cliente* Hotel::buscarClientePorDNI(string dni) const {
-	for (int i = 0; i < clientes.size(); i++) {
-		if (clientes[i]->getDni() == dni) {
+void Hotel::buscarClientePorDNI(string dni) const
+{
+	for (int i = 0; i < clientes.size(); i++)
+	{
+		if (clientes[i]->getDni == dni) {
 			return clientes[i];
 		}
+
 	}
 	return nullptr;
 }
-
-Habitacion* Hotel::buscarHabitacionPorNumero(int numero) const {
-	for (int i = 0; i < habitaciones.size(); i++) {
-		if (habitaciones[i]->getNumero() == numero) {
-			return habitaciones[i];
-		}
-	}
-	return nullptr;
-}
-
-Reserva* Hotel::buscarReservaPorID(int idReserva) const {
-	for (int i = 0; i < reservas.size(); i++) {
-		if (reservas[i]->getIdReserva() == idReserva) {
+void Hotel::buscarReservaPorID(int IDreserva)const
+{
+	for (int i = 0; i < reservas.size(); i++)
+	{
+		if (reservas[i]->getIDreserva == IDreserva) {
 			return reservas[i];
 		}
 	}
 	return nullptr;
 }
+void Hotel::buscarHabitacionPorNumero(int numero) const
+{
+	for (int i = 0; i < habitaciones.size(); i++)
+	{
+		if (habitaciones[i]->getNumero == numero) {
+			return habitaciones[i];
+		}
 
-void Hotel::mostrarClientes() const {
-	cout << "Clientes registrados:" << endl;
-	for (int i = 0; i < clientes.size(); i++) {
+	}
+	return nullptr;
+}
+void Hotel::mostrarClientes() const //recorre y llama al vector para mostrar 
+{
+	for (int i = 0; i < clientes.size(); i++)
+	{
 		clientes[i]->mostrarInfoCliente();
-		cout << endl;
+		cout << "__________________" << endl;
+
 	}
 }
-
-void Hotel::mostrarHabitaciones() const {
-	cout << "Habitaciones disponibles:" << endl;
-	for (int i = 0; i < habitaciones.size(); i++) {
+void Hotel::mostrarHabitaciones() const //el puntero apunta a la hab y ejecuta funcion
+{
+	for (int i = 0; i < habitaciones.size(); i++)
+	{
 		habitaciones[i]->mostrarInfoHabitacion();
-		cout << endl;
+		cout << "_______________________" << endl;
 	}
+	
 }
-
-void Hotel::mostrarReservas() const {
-	cout << "Reservas realizadas:" << endl;
-	for (int i = 0; i < reservas.size(); i++) {
+void Hotel::mostrarReservas() const
+{
+	for (int i = 0; i < reservas.size(); i++)
+	{
 		reservas[i]->mostrarInfoReserva();
-		cout << endl;
+		cout << "______________" << endl;
 	}
 }
+void Hotel::cancelarReserva(int IDreserva) {
+	for (int i = 0; i < reservas.size(); i++) {
+		if (reservas[i]->getIDreserva() == IDreserva) {
 
-void Hotel::cancelarReserva(int idReserva) {
-	for (int i = 0; i < reserva.size(); i++) {
-		if (reservas[i]->getIdReserva() == idReserva) {
 			delete reservas[i];
 			reservas.erase(reservas.begin() + i);
-			cout << "Reserva con ID " << idReserva << " cancelada." << endl;
+
+			cout << "Reserva cancelada correctamente" << endl;
 			return;
 		}
 	}
 }
+void Hotel::guardarClientesEnArchivo(string nombreArchivo) const
+{
+	ofstream fichero(nombreArchivo);
 
-void Hotel::guardarClientesEnArchivo(string& nombreArchivo) const {
-	ofstream archivo(nombreArchivo);
-	if (archivo.is_open()) {
+	if (!fichero) {
+		cout << "Error al abrir el archivo" << endl;
+		return;
+	}else{
 		for (int i = 0; i < clientes.size(); i++) {
-			archivo << clientes[i]->getDni() << endl; 
-			archivo << clientes[i]->getNombre() << endl; 
-			archivo << clientes[i]->getApellido() << endl;
-			archivo << clientes[i]->getEmail() << endl;
-			archivo << clientes[i]->getTelefono() << endl;
+			fichero << clientes[i]->getDni() << ";"
+				<< clientes[i]->getNombre() << ";"
+				<< clientes[i]->getApellido() << ";"
+				<< clientes[i]->getEmail() << ";"
+				<< clientes[i]->getTelefono() << endl;
 		}
-		archivo.close();
-		cout << "Clientes guardados en el archivo " << nombreArchivo << endl;
 	}
-	else {
-		cout << "No se pudo abrir el archivo " << nombreArchivo << " para guardar los clientes." << endl;
+
+	fichero.close();
+}
+void Hotel::guardarHabitacionesEnArchivo(string nombreArchivo) const
+{
+	ofstream fichero(nombreArchivo);
+
+	if (!fichero) {
+		cout << "Error al abrir el archivo" << endl;
+		return;
 	}
+
+	for (int i = 0; i < habitaciones.size(); i++) {
+		fichero << habitaciones[i]->getNumero() << ";"
+			<< habitaciones[i]->getTipo() << ";"
+			<< habitaciones[i]->getPrecio() << endl;
+	}
+
+	fichero.close();
+}
+void Hotel::guardarReservasEnArchivo(string nombreArchivo) const
+{
+	ofstream fichero(nombreArchivo);
+
+	if (!fichero) {
+		cout << "Error al abrir el archivo" << endl;
+		return;
+	}
+
+	for (int i = 0; i < reservas.size(); i++) {
+
+		fichero << reservas[i]->getIDreserva() << ";"
+			<< reservas[i]->getFechaInicio().getDia() << "-"
+			<< reservas[i]->getFechaInicio().getMes() << "-"
+			<< reservas[i]->getFechaInicio().getAnio() << ";"
+			<< reservas[i]->getNumeroNoches() << ";"
+			<< reservas[i]->getCliente()->getDni() << ";"
+			<< reservas[i]->getHabitacion()->getNumero() << ";"
+			<< reservas[i]->getPrecioTotal()
+			<< endl;
+	}
+
+	fichero.close();
 }
 
-void Hotel::guardarHabitacionesEnArchivo(string& nombreArchivo) const {
-	ofstream archivo(nombreArchivo);
-	if (archivo.is_open()) {
-		for (int i = 0; i < habitaciones.size(); i++) {
-			archivo << habitaciones[i]->getNumero() << endl;
-			archivo << static_cast<int>(habitaciones[i]->getTipo()) << endl;
-			archivo << habitaciones[i]->getPrecioPorNoche() << endl;
+void Hotel::cargarClientesDesdeArchivo(string nombreArchivo) const
+{
+		ifstream archivo(nombreArchivo);
+
+		if (!archivo.is_open()) {
+			cout << "Error al abrir el archivo de clientes\n";
+			return;
 		}
+
+		clientes.clear();
+
+		string linea;
+
+		while (getline(archivo, linea)) {
+			stringstream ss(linea);
+
+			Cliente c; 
+
+			getline(ss, c.dni, ', ');
+			getline(ss, c.nombre, ', ');
+			getline(ss, c.apellido, ', ');
+			getline(ss, c.email, ', ');
+			getline(ss, c.telefono, ', ');
+
+			if (c.dni != "") {
+				clientes.push_back(c);
+			}
+		}
+
 		archivo.close();
-		cout << "Habitaciones guardadas en el archivo " << nombreArchivo << endl;
-	}
-	else {
-		cout << "No se pudo abrir el archivo " << nombreArchivo << " para guardar las habitaciones." << endl;
-	}
+	
 }
 
-void Hotel::guardarReservasEnArchivo(string& nombreArchivo) const {
-	ofstream archivo(nombreArchivo);
-	if (archivo.is_open()) {
-		for (int i = 0; i < reservas.size(); i++) {
-			archivo << reservas[i]->getIdReserva() << endl;
-			archivo << reservas[i]->getFechaInicio().toString() << endl;
-			archivo << reservas[i]->getNumeroNoches() << endl;
-			if (reservas[i]->getCliente() != nullptr) {
-				archivo << reservas[i]->getCliente()->getDni() << endl;
-			}
-			else {
-				archivo << "No asignado" << endl;
-			}
-			if (reservas[i]->getHabitacion() != nullptr) {
-				archivo << reservas[i]->getHabitacion()->getNumero() << endl;
-			}
-			else {
-				archivo << "No asignado" << endl;
-			}
-			archivo << reservas[i]->getPrecioTotal() << endl;
-		}
-		archivo.close();
-		cout << "Reservas guardadas en el archivo " << nombreArchivo << endl;
-	}
-	else {
-		cout << "No se pudo abrir el archivo " << nombreArchivo << " para guardar las reservas." << endl;
-	}
-}
-
-void Hotel::cargarClientesDesdeArchivo(string nombreArchivo) {
+void Hotel::cargarHabitacionesDesdeArchivo(string nombreArchivo) const {
 	ifstream archivo(nombreArchivo);
 
-	if (archivo.is_open()) {
-		string dni, nombre, apellido, email, telefono;
+	if (!archivo.is_open()) {
+		cout << "Error al abrir el archivo de habitaciones\n";
+		return;
+	}
 
-		while (getline(archivo, dni)) {
-			getline(archivo, nombre);
-			getline(archivo, apellido);
-			getline(archivo, email);
-			getline(archivo, telefono);
+	habitaciones.clear();
 
-			Cliente* nuevoCliente = new Cliente(dni, nombre, apellido, email, telefono);
-			agregarCliente(cliente);
+	string linea;
+
+	while (getline(archivo, linea)) {
+		stringstream ss(linea);
+
+		Habitacion h;
+
+		string token;
+
+		
+		getline(ss, token, ',');
+		h.numero = stoi(token);
+
+		
+		getline(ss, token, ',');
+		if (token == "INDIVIDUAL") {
+			h.tipo = TipoHabitacion::INDIVIDUAL;
+		}
+		else if (token == "DOBLE") {
+			h.tipo = TipoHabitacion::DOBLE;
+		}
+		else if (token == "SUITE") {
+			h.tipo = TipoHabitacion::SUITE;
+		}
+		else {
+			h.tipo = TipoHabitacion::INDIVIDUAL; //x si es q no registra o esta null divagate
 		}
 
-		archivo.close();
-		cout << "Clientes cargados desde el archivo " << nombreArchivo << endl;
+		
+		getline(ss, token, ',');
+		h.precioPorNoche = stod(token);
+
+		if (h.numero > 0) {
+			habitaciones.push_back(h);
+		}
 	}
 
-	else {
-		cout << "No se pudo abrir el archivo " << nombreArchivo << " para cargar los clientes." << endl;
-	}
+	archivo.close();
+
 }
 
-void Hotel::cargarHabitacionesDesdeArchivo(string nombreArchivo) {
+void Hotel::cargarReservasDesdeArchivo(string nombreArchivo) const {
 	ifstream archivo(nombreArchivo);
 
-	if (archivo.is_open()) {
-		int numero, tipoInt;
-		double precioPorNoche;
+	if (!archivo.is_open()) {
+		cout << "Error al abrir el archivo de reservas\n";
+		return;
+	}
 
-		while (archivo >> numero) {
-			archivo >> tipoInt;
-			archivo >> precioPorNoche;
+	reservas.clear();
 
-			TipoHabitacion tipo = static_cast<TipoHabitacion>(tipoInt);
-			Habitacion* nuevaHabitacion = new Habitacion(numero, tipo, precioPorNoche);
-			habitaciones.push_back(nuevaHabitacion);
+	string linea;
+
+	while (getline(archivo, linea)) {
+		stringstream ss(linea);
+
+		Reserva r;
+
+		string token;
+		string dniCliente;
+		int numeroHabitacion;
+
+		getline(ss, token, ', ');
+		r.idReserva = stoi(token);
+
+		getline(ss, dniCliente, ', ');
+
+		getline(ss, token, ', ');
+		numeroHabitacion = stoi(token);
+
+		getline(ss, r.fechaInicio, ', ');
+
+		getline(ss, token, ', ');
+		r.numeroNoches = stoi(token);
+
+		getline(ss, token, ',');
+		r.precioTotal = stod(token);
+
+		r.cliente = nullptr;
+		for (auto& c : clientes) {
+			if (c.dni == dniCliente) {
+				r.cliente = &c;
+				break;
+			}
 		}
 
-		archivo.close();
-		cout << "Habitaciones cargadas desde el archivo " << nombreArchivo << endl;
-	}
-
-	else {
-		cout << "No se pudo abrir el archivo " << nombreArchivo << " para cargar las habitaciones." << endl;
-	}
-}
-
-void Hotel::cargarReservasDesdeArchivo(string nombreArchivo) {
-	ifstream archivo(nombreArchivo);
-
-	if (archivo.is_open()) {
-		int idReserva, numeroNoches;
-		string fechaInicio, clienteDni, numHabitacion;
-
-		while (archivo >> idReserva) {
-			archivo.ignore();
-			getline(archivo, fechaInicio);
-			archivo >> numeroNoches;
-			archivo.ignore();
-			getline(archivo, clienteDni);
-			getline(archivo, numHabitacion);
-			archivo >> precioTotal;
-			archivo.ignore();
-
-			int dia, mes, anno;
-			sscanf(fechaInicio.c_str(), "%d/%d/%d", &dia, &mes, &anno);
-			Fecha fecha(dia, mes, anno);
-
-			Cliente* cliente = nullptr;
-			if (clienteDni != "No asignado") {
-				cliente = buscarClientePorDni(clienteDni);
+		r.habitacion = nullptr;
+		for (auto& h : habitaciones) {
+			if (h.numero == numeroHabitacion) {
+				r.habitacion = &h;
+				break;
 			}
-
-			Habitacion* habitacion = nullptr;
-			if (numHabitacion != "No asignado") {
-				int numeroHabitacion = stoi(numHabitacion);
-				habitacion = buscarHabitacionPorNumero(numeroHabitacion);
-			}
-
-			Reserva* nuevaReserva = new Reserva(idReserva, fecha, numeroNoches, cliente, habitacion);
-			nuevaReserva->calcularPrecioTotal();
-			reservas.push_back(nuevaReserva);
 		}
 
-		archivo.close();
-		cout << "Reservas cargadas desde el archivo " << nombreArchivo << endl;
+		if (r.cliente != nullptr && r.habitacion != nullptr) {
+			reservas.push_back(r);
+		}
 	}
 
-	else {
-		cout << "No se pudo abrir el archivo " << nombreArchivo << " para cargar las reservas." << endl;
-	}
+	archivo.close();
 }
+
