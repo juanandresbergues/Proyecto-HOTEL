@@ -120,5 +120,21 @@ void Hotel::guardarClientesEnArchivo(string nombreArchivo) const
 
 	fichero.close();
 }
+void Hotel::guardarHabitacionesEnArchivo(string nombreArchivo) const
+{
+	ofstream fichero(nombreArchivo);
 
+	if (!fichero) {
+		cout << "Error al abrir el archivo" << endl;
+		return;
+	}
+
+	for (int i = 0; i < habitaciones.size(); i++) {
+		fichero << habitaciones[i]->getNumero() << ";"
+			<< habitaciones[i]->getTipo() << ";"
+			<< habitaciones[i]->getPrecio() << endl;
+	}
+
+	fichero.close();
 }
+
