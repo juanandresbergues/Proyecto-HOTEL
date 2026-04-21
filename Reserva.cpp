@@ -7,7 +7,7 @@ int Reserva::siguienteID = 1;
 Reserva::Reserva() {
 	IDreserva = siguienteID++;
 
-	fechaInicio = fecha();
+	fechaInicio = Fecha();
 	numeroNoches = 0;
 	cliente = nullptr;
 	habitacion = nullptr;
@@ -15,7 +15,7 @@ Reserva::Reserva() {
 }
 
 Reserva::Reserva(Fecha fechaInicio, int numeroNoches, Cliente* cliente, Habitacion* habitacion) {
-	idReserva = siguienteID++;
+	IDreserva = siguienteID++;
 
 	this->fechaInicio = fechaInicio;
 	this->numeroNoches = numeroNoches;
@@ -28,10 +28,10 @@ Reserva::~Reserva() {
 }
 
 int Reserva::getIDreserva() const {
-	return idReserva;
+	return IDreserva;
 }
 
-fecha Reserva::getFechaInicio() const {
+Fecha Reserva::getFechaInicio() const {
 	return fechaInicio;
 }
 
@@ -81,7 +81,7 @@ void Reserva::calcularPrecioTotal() {
 }
 
 void Reserva::mostrarInfoReserva() const {
-	cout << "ID de reserva: " << idReserva << endl;
+	cout << "ID de reserva: " << IDreserva << endl;
 	cout << "Fecha de inicio: " << fechaInicio.toString() << endl;
 	cout << "Número de noches: " << numeroNoches << endl;
 	if (cliente != nullptr) {

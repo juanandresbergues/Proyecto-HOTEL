@@ -1,4 +1,5 @@
 #include "Habitacion.hpp"
+#include <iostream>
 using namespace std;
 
 Habitacion::Habitacion() {

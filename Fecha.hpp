@@ -1,6 +1,7 @@
 #ifndef FECHA_HPP
 #define FECHA_HPP
 
+#include <string>
 using namespace std;
 
 class Fecha {
@@ -10,7 +11,7 @@ private:
 	int anno;
 
 public:
-	Fecha()
+	Fecha();
 	Fecha(int dia, int mes, int anno);
 	~Fecha();
 

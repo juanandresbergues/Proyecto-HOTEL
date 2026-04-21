@@ -1,4 +1,6 @@
 #include "Fecha.hpp"
+#include <iostream>
+#include <string>
 using namespace std;
 
 Fecha::Fecha() {

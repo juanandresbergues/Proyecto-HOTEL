@@ -3,6 +3,7 @@
 #include <fstream>
 #include <cstdio>
 #include <string>
+#include <sstream>
 using namespace std;
 
 Hotel::Hotel() {
@@ -34,38 +35,37 @@ void Hotel::agregarReserva(Reserva* reserva)
 {
 	reservas.push_back(reserva);
 }
-void Hotel::buscarClientePorDNI(string dni) const
-{
-	for (int i = 0; i < clientes.size(); i++)
-	{
-		if (clientes[i]->getDni == dni) {
+Cliente* Hotel::buscarClientePorDNI(string dni) const {
+	for (int i = 0; i < clientes.size(); i++) {
+		if (clientes[i]->getDni() == dni) {
 			return clientes[i];
 		}
 
 	}
 	return nullptr;
 }
-void Hotel::buscarReservaPorID(int IDreserva)const
-{
+
+Reserva* Hotel::buscarReservaPorID(int IDreserva) const {
 	for (int i = 0; i < reservas.size(); i++)
 	{
-		if (reservas[i]->getIDreserva == IDreserva) {
+		if (reservas[i]->getIDreserva() == IDreserva) {
 			return reservas[i];
 		}
 	}
 	return nullptr;
 }
-void Hotel::buscarHabitacionPorNumero(int numero) const
-{
+
+Habitacion* Hotel::buscarHabitacionPorNumero(int numero) const {
 	for (int i = 0; i < habitaciones.size(); i++)
 	{
-		if (habitaciones[i]->getNumero == numero) {
+		if (habitaciones[i]->getNumero() == numero) {
 			return habitaciones[i];
 		}
 
 	}
 	return nullptr;
 }
+
 void Hotel::mostrarClientes() const //recorre y llama al vector para mostrar 
 {
 	for (int i = 0; i < clientes.size(); i++)
@@ -104,7 +104,7 @@ void Hotel::cancelarReserva(int IDreserva) {
 		}
 	}
 }
-void Hotel::guardarClientesEnArchivo(string nombreArchivo) const
+void Hotel::guardarClientesEnArchivo(string& nombreArchivo) const
 {
 	ofstream fichero(nombreArchivo);
 
@@ -123,24 +123,23 @@ void Hotel::guardarClientesEnArchivo(string nombreArchivo) const
 
 	fichero.close();
 }
-void Hotel::guardarHabitacionesEnArchivo(string nombreArchivo) const
-{
-	ofstream fichero(nombreArchivo);
+void Hotel::guardarHabitacionesEnArchivo(string& nombreArchivo) const {
+	ofstream archivo(nombreArchivo);
 
-	if (!fichero) {
+	if (!archivo) {
 		cout << "Error al abrir el archivo" << endl;
 		return;
 	}
 
 	for (int i = 0; i < habitaciones.size(); i++) {
-		fichero << habitaciones[i]->getNumero() << ";"
-			<< habitaciones[i]->getTipo() << ";"
-			<< habitaciones[i]->getPrecio() << endl;
+		archivo << habitaciones[i]->getNumero() << ";"
+			<< static_cast<int>(habitaciones[i]->getTipo()) << ";"
+			<< habitaciones[i]->getPrecioPorNoche() << endl;
 	}
 
-	fichero.close();
+	archivo.close();
 }
-void Hotel::guardarReservasEnArchivo(string nombreArchivo) const
+void Hotel::guardarReservasEnArchivo(string& nombreArchivo) const
 {
 	ofstream fichero(nombreArchivo);
 
@@ -154,7 +153,7 @@ void Hotel::guardarReservasEnArchivo(string nombreArchivo) const
 		fichero << reservas[i]->getIDreserva() << ";"
 			<< reservas[i]->getFechaInicio().getDia() << "-"
 			<< reservas[i]->getFechaInicio().getMes() << "-"
-			<< reservas[i]->getFechaInicio().getAnio() << ";"
+			<< reservas[i]->getFechaInicio().getAnno() << ";"
 			<< reservas[i]->getNumeroNoches() << ";"
 			<< reservas[i]->getCliente()->getDni() << ";"
 			<< reservas[i]->getHabitacion()->getNumero() << ";"
@@ -165,8 +164,7 @@ void Hotel::guardarReservasEnArchivo(string nombreArchivo) const
 	fichero.close();
 }
 
-void Hotel::cargarClientesDesdeArchivo(string nombreArchivo) const
-{
+void Hotel::cargarClientesDesdeArchivo(string nombreArchivo) {
 		ifstream archivo(nombreArchivo);
 
 		if (!archivo.is_open()) {
@@ -183,13 +181,20 @@ void Hotel::cargarClientesDesdeArchivo(string nombreArchivo) const
 
 			Cliente c; 
 
-			getline(ss, c.dni, ', ');
-			getline(ss, c.nombre, ', ');
-			getline(ss, c.apellido, ', ');
-			getline(ss, c.email, ', ');
-			getline(ss, c.telefono, ', ');
+			string dni;
+			string nombre;
+			string apellido;
+			string email;
+			string telefono;
 
-			if (c.dni != "") {
+			getline(ss, dni, ';');
+			getline(ss, nombre, ';');
+			getline(ss, apellido, ';');
+			getline(ss, email, ';');
+			getline(ss, telefono, ';');
+
+			if (dni != "") {
+				Cliente* c = new Cliente(dni, nombre, apellido, email, telefono);
 				clientes.push_back(c);
 			}
 		}
@@ -198,11 +203,11 @@ void Hotel::cargarClientesDesdeArchivo(string nombreArchivo) const
 	
 }
 
-void Hotel::cargarHabitacionesDesdeArchivo(string nombreArchivo) const {
+void Hotel::cargarHabitacionesDesdeArchivo(string nombreArchivo) {
 	ifstream archivo(nombreArchivo);
 
 	if (!archivo.is_open()) {
-		cout << "Error al abrir el archivo de habitaciones\n";
+		cout << "Error al abrir el archivo de habitaciones" << endl;
 		return;
 	}
 
@@ -213,47 +218,37 @@ void Hotel::cargarHabitacionesDesdeArchivo(string nombreArchivo) const {
 	while (getline(archivo, linea)) {
 		stringstream ss(linea);
 
-		Habitacion h;
-
 		string token;
+		int numero;
+		int tipoEntero;
+		double precioPorNoche;
+		
+		getline(ss, token, ',');
+		numero = stoi(token);
 
 		
 		getline(ss, token, ',');
-		h.numero = stoi(token);
+		tipoEntero = stoi(token);
 
 		
 		getline(ss, token, ',');
-		if (token == "INDIVIDUAL") {
-			h.tipo = TipoHabitacion::INDIVIDUAL;
-		}
-		else if (token == "DOBLE") {
-			h.tipo = TipoHabitacion::DOBLE;
-		}
-		else if (token == "SUITE") {
-			h.tipo = TipoHabitacion::SUITE;
-		}
-		else {
-			h.tipo = TipoHabitacion::INDIVIDUAL; //x si es q no registra o esta null divagate
-		}
+		precioPorNoche = stod(token);
 
-		
-		getline(ss, token, ',');
-		h.precioPorNoche = stod(token);
+		TipoHabitacion tipo = static_cast<TipoHabitacion>(tipoEntero);
 
-		if (h.numero > 0) {
-			habitaciones.push_back(h);
-		}
+		Habitacion* h = new Habitacion(numero, tipo, precioPorNoche);
+		habitaciones.push_back(h);
 	}
 
 	archivo.close();
 
 }
 
-void Hotel::cargarReservasDesdeArchivo(string nombreArchivo) const {
+void Hotel::cargarReservasDesdeArchivo(string nombreArchivo) {
 	ifstream archivo(nombreArchivo);
 
 	if (!archivo.is_open()) {
-		cout << "Error al abrir el archivo de reservas\n";
+		cout << "Error al abrir el archivo de reservas" << endl;
 		return;
 	}
 
@@ -264,49 +259,44 @@ void Hotel::cargarReservasDesdeArchivo(string nombreArchivo) const {
 	while (getline(archivo, linea)) {
 		stringstream ss(linea);
 
-		Reserva r;
-
-		string token;
+		string idTexto;
+		string fechaTexto;
+		string nochesTexto;
 		string dniCliente;
-		int numeroHabitacion;
+		string numeroHabitacionTexto;
+		string precioTexto;
 
-		getline(ss, token, ', ');
-		r.idReserva = stoi(token);
+		getline(ss, idTexto, ';');
+		getline(ss, fechaTexto, ';');
+		getline(ss, nochesTexto, ';');
+		getline(ss, dniCliente, ';');
+		getline(ss, numeroHabitacionTexto, ';');
+		getline(ss, precioTexto, ';');
 
-		getline(ss, dniCliente, ', ');
+		int dia = 1, mes = 1, anno = 2000;
+		char separador1, separador2;
+		stringstream fechaSS(fechaTexto);
+		fechaSS >> dia >> separador1 >> mes >> separador2 >> anno;
 
-		getline(ss, token, ', ');
-		numeroHabitacion = stoi(token);
+		Fecha fecha(dia, mes, anno);
+		int numeroNoches = stoi(nochesTexto);
+		double precioTotal = stod(precioTexto);
 
-		getline(ss, r.fechaInicio, ', ');
-
-		getline(ss, token, ', ');
-		r.numeroNoches = stoi(token);
-
-		getline(ss, token, ',');
-		r.precioTotal = stod(token);
-
-		r.cliente = nullptr;
-		for (auto& c : clientes) {
-			if (c.dni == dniCliente) {
-				r.cliente = &c;
-				break;
-			}
+		Cliente* cliente = nullptr;
+		if (dniCliente != "NULL") {
+			cliente = buscarClientePorDNI(dniCliente);
 		}
 
-		r.habitacion = nullptr;
-		for (auto& h : habitaciones) {
-			if (h.numero == numeroHabitacion) {
-				r.habitacion = &h;
-				break;
-			}
+		Habitacion* habitacion = nullptr;
+		if (numeroHabitacionTexto != "-1") {
+			int numeroHabitacion = stoi(numeroHabitacionTexto);
+			habitacion = buscarHabitacionPorNumero(numeroHabitacion);
 		}
 
-		if (r.cliente != nullptr && r.habitacion != nullptr) {
-			reservas.push_back(r);
-		}
+		Reserva* r = new Reserva(fecha, numeroNoches, cliente, habitacion);
+		r->setPrecioTotal(precioTotal);
+		reservas.push_back(r);
 	}
 
 	archivo.close();
 }
-
